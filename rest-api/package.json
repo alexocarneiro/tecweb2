@@ -1,0 +1,21 @@
+{
+  "name": "api-nutricao",
+  "version": "1.0.0",
+  "description": "Api tp Nutricao",
+  "main": "api.js",
+  "scripts": {
+    "build": "babel src -d dist "
+  },
+  "author": "Alex Carneiro",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.4"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "mysql": "^2.16.0"
+  }
+}

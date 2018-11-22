@@ -1,0 +1,32 @@
+/********************
+Componente box-rodape
+********************/
+.rodape{
+ border-top: 1px red;
+ padding: 30px;
+    
+}
+.box-rodape {
+    
+    display: inline-block;
+    padding: 60px 0;
+}
+
+.box-rodape > .conteudo {
+
+}
+
+.box-rodape > .titulo {
+
+}
+
+.conteudo li{
+    list-style-type: none;
+
+}
+
+.conteudo a:hover{
+    list-style-type: none;
+    text-decoration: none;
+    color: #00ff8c;
+}

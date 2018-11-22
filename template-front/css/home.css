@@ -1,0 +1,164 @@
+/********************
+Componente destaque-artigo
+********************/
+.menu-esquerda{
+    margin-top: 30px;
+    display: block; 
+}
+.menu-esquerda ul li a{
+  
+    font-size: 18px;
+    display: block;            
+    text-decoration: none;
+
+}
+
+.menu-esquerda ul li a:hover{
+    
+    color: #11d66d;
+}
+.conteudo01{
+
+    float: left;
+    margin-left: 18%;
+    width: 82%;
+
+}
+
+.banner-area_home img{
+  height: 100%;
+  width: 100%;
+ 
+
+}
+
+.banner-area_home {
+  background: url(../img/banner_home.jpg) no-repeat center center/cover ;
+  /* background: -moz-linear-gradient(left, rgba(60, 64, 143, 0.95) 0%, rgba(91, 97, 207, 0.95) 100%);
+  background: -webkit-linear-gradient(left, rgba(60, 64, 143, 0.95) 0%, rgba(91, 97, 207, 0.95) 100%);
+  background: linear-gradient(to right, rgba(60, 64, 143, 0.95) 0%, rgba(91, 97, 207, 0.95) 100%); */
+
+}
+
+.overlay-bg {
+  background: -moz-linear-gradient(left, rgba(60, 64, 143, 0.95) 0%, rgba(91, 97, 207, 0.95) 100%);
+  background: -webkit-linear-gradient(left, rgba(60, 64, 143, 0.95) 0%, rgba(91, 97, 207, 0.95) 100%);
+  background: linear-gradient(to right, rgba(60, 64, 143, 0.95) 0%, rgba(91, 97, 207, 0.95) 100%);
+}
+
+
+.left-sidebar {
+    background-color: #141d45;
+    float: left;
+    min-height: 100%;
+    position: fixed;
+    width: 18%;
+}
+#main-wrapper {
+    float: left;
+    margin-left: 18%;
+    width: 82%;
+}
+
+
+/* form starting stylings ------------------------------- */
+.group 			  { 
+    position:relative; 
+    margin-bottom:40px; 
+  }
+  input 				{
+    font-size:10px;
+    padding:8px 8px 8px 5px;
+    display:block;
+    width:200px;
+    border:none;
+    border-bottom:1px solid #00ff8c;
+  }
+  input:focus 		{ outline:none; }
+  
+  /* LABEL ======================================= */
+  label 				 {
+    color:#999; 
+    font-size:15px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+  
+  /* active state */
+  input:focus ~ label, input:valid ~ label 		{
+    top:-20px;
+    font-size:14px;
+   
+  }
+  
+  /* BOTTOM BARS ================================= */
+  .bar 	{ position:relative; display:block; width:200px; }
+  .bar:before, .bar:after 	{
+    content:'';
+    height:2px; 
+    width:0;
+    bottom:1px; 
+    position:absolute;
+    background:#00ff8c; 
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+  .bar:before {
+    left:50%;
+  }
+  .bar:after {
+    right:50%; 
+  }
+  
+  /* active state */
+  input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width:50%;
+  }
+  
+  /* HIGHLIGHTER ================================== */
+  .highlight {
+    position:absolute;
+    height:60%; 
+    width:100px; 
+    top:25%; 
+    left:0;
+    pointer-events:none;
+    opacity:0.5;
+  }
+  
+  /* active state */
+  input:focus ~ .highlight {
+    -webkit-animation:inputHighlighter 0.3s ease;
+    -moz-animation:inputHighlighter 0.3s ease;
+    animation:inputHighlighter 0.3s ease;
+  }
+  
+  /* ANIMATIONS ================ */
+  @-webkit-keyframes inputHighlighter {
+      from { background:#00ff8c; }
+    to 	{ width:0; background:transparent; }
+  }
+  @-moz-keyframes inputHighlighter {
+      from { background:#00ff8c; }
+    to 	{ width:0; background:transparent; }
+  }
+  @keyframes inputHighlighter {
+      from { background:#00ff8c; }
+    to 	{ width:0; background:transparent; }
+  }
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,148 @@
+/********************
+Componente menu-principal
+********************/
+.menu-principal {
+
+}
+
+.menu-principal > .lista {
+
+}
+
+.menu-principal > .lista > .item {
+
+}
+
+.banner-area {
+  background: url(../img/banner.jpg) no-repeat center center/cover;
+  /* background: -moz-linear-gradient(left, rgba(60, 64, 143, 0.95) 0%, rgba(91, 97, 207, 0.95) 100%);
+  background: -webkit-linear-gradient(left, rgba(60, 64, 143, 0.95) 0%, rgba(91, 97, 207, 0.95) 100%);
+  background: linear-gradient(to right, rgba(60, 64, 143, 0.95) 0%, rgba(91, 97, 207, 0.95) 100%); */
+
+}
+
+.overlay-bg {
+  background: -moz-linear-gradient(left, rgba(60, 64, 143, 0.95) 0%, rgba(91, 97, 207, 0.95) 100%);
+  background: -webkit-linear-gradient(left, rgba(60, 64, 143, 0.95) 0%, rgba(91, 97, 207, 0.95) 100%);
+  background: linear-gradient(to right, rgba(60, 64, 143, 0.95) 0%, rgba(91, 97, 207, 0.95) 100%);
+}
+
+  h3{
+    font-family: "Poppins", sans-serif;
+    color: #222222;
+    line-height: 1.5em;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 600;
+  }
+  
+  h3{
+    font-size: 24px;
+  
+  }
+
+  .text{
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 200;
+
+  }
+
+  .conteudo-laranja{
+  
+    background-color: #ff5f3f;
+ 
+  }
+ 
+  .conteudo-branco{
+  
+    background-color: white;
+ 
+  } 
+  
+  .conteudo-azul{
+  
+    background-color: #2957ce;
+ 
+  }
+
+  
+.container {
+  width: 90vw;
+  height: 70vh;
+  display: flex;
+  align-items: center
+}
+
+.button-login{
+  color: white;
+  line-height: 35px;
+  padding: 0 40px;
+  border-radius: 20px;
+  background: transparent;
+  border: 1px solid #00ff8c;
+  display: inline-block;
+  font-weight: 500;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+ 
+
+}
+
+.button-login:hover{
+  
+  background: #00ff8c;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+
+
+.container-objetivos{
+
+  width: 60px;
+  height: 60px;
+ 
+  text-align: center;
+  align-items: center;
+
+}
+.container-objetivos p{
+  text-align: center;
+  align-items: center;
+
+}
+ 
+
+.container-servicos{
+  background: #222222;
+  padding: 20px;
+}
+
+
+.item-servicos{
+
+  background: #fff;
+  padding: 20px;
+  border-bottom: 2px solid #00ff8c;
+
+}
+
+.item-servicos:hover{
+background: #00ff8c;
+color:  #fff;
+cursor: pointer;
+}
+
+
+
+.container-objetivos01{
+ height: 300px;
+  text-align: center;
+
+
+}
