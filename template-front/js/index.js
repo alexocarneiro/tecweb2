@@ -28,7 +28,7 @@ function onSignIn(response) {
     var userEmail = perfil.getEmail();
     var token = response.getAuthResponse().id_token;
     console.log("Tolkien: " + token);
-    console.log("/nEmail: " + userEmail);
+    console.log("Email: " + userEmail);
 
     $.ajax({
         type: 'POST', 
