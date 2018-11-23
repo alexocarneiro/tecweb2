@@ -27,7 +27,7 @@ function onSignIn(response) {
     var userName = perfil.getName();
     var userEmail = perfil.getEmail();
     var token = response.getAuthResponse().id_token;
-    console.log("~ le Tolkien: " + token);
+    //console.log("~ le Tolkien: " + token);
     console.log("Email: " + userEmail);
 
     $.ajax({
