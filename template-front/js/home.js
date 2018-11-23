@@ -76,7 +76,7 @@ $('#carregarValoresNutri').click (function () {
         
     $.ajax ({
             
-        url: "http://localhost:3000/alimentos/"+[i]+"", 
+        url: "https://apinutricaov2.azurewebsites.net/alimentos/"+[i]+"", 
         data: {
             api_key: "9c2c75d9d67c3f98cc98bb29450115c5"
         },
