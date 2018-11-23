@@ -1,5 +1,4 @@
 function login(){
-    alert
     $.ajax({
         type: 'POST', 
         url: 'appX/login.php', 
@@ -21,3 +20,33 @@ function login(){
         console.log("Detalhes: " + desc + "nErro:" + err);
     });
 }
+
+function onSignIn(response) {
+    var perfil = response.getBasicProfile();
+    var userID = perfil.getId();
+    var userName = perfil.getName();
+    var userEmail = perfil.getEmail();
+    var token = response.getAuthResponse().id_token;
+    console.log("~ le Tolkien: " + token);
+
+    $.ajax({
+        type: 'POST', 
+        url: 'appX/login.php', 
+        data: {
+            email: userEmail,
+            token: token
+        },
+        dataType: 'html'
+    }).done(function(data) {
+        if (data != "error"){
+            window.location.href = "src/home.php";
+        }else{
+            alert("Usuário ou senha incorretos");
+        }
+ 
+    }).fail(function(xhr, desc, err) {
+        alert("Erro: verifique a conexão");
+        console.log(xhr);
+        console.log("Detalhes: " + desc + "nErro:" + err);
+    });
+};
