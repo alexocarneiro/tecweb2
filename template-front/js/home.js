@@ -51,7 +51,7 @@ $("#voltarNutri").on("click", function () {
 $('#carregarAlimentos').click (function () {
     console.log('batata 09');
     $.ajax ({
-        url: "http://localhost:3000/alimentos", 
+        url: "https://apinutricaov2.azurewebsites.net/alimentos", 
         data: {
             api_key: "9c2c75d9d67c3f98cc98bb29450115c5"
         },
