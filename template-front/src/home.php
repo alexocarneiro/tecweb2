@@ -39,7 +39,7 @@
                     <li><a href="indiceGlicemico.php">Indice Glicêmico</a></li>
                     <li><a href="controleGlicemico.php">Controle Glicêmico</a></li>
                     <li><a href="alerta.php">Alerta</a></li>
-                    <li><a href="" onclick="signOut()">Sair</a></li>
+                    <li><a href="https://www.google.com/accounts/Logout?continue=https://appengine.google.com/_ah/logout?continue=https://apinutricaov2.azurewebsites.net/template-front/">Sair</a></li>
                 </ul>
             </nav>
      </aside>
