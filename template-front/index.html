@@ -152,8 +152,8 @@
                 </div>
                 <div class="">
                     
-                  <button style="background: #4267b2" class="btn btn-primary btn-sm" type="submit"><i class="fab fa-facebook-square mr-2"></i>Entrar com o Facebook</button>
-                  </div>
+                <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark" data-width="370" data-height="50" data-longtitle="true" data-lang="pt-BR"></div>  
+                </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">voltar</button>
@@ -187,12 +187,13 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    
     <div class="user">
       <img id="user-photo" src="https://mariovalney.com/wp-content/uploads/2015/06/user-anonimo.jpg">
       <h1>Olá, <span id="user-name">visitante</span>!</h1>
       <p id="user-email"></p>
     </div>
-    <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark" data-width="370" data-height="50" data-longtitle="true" data-lang="pt-BR"></div>
+    
  
     <script>
       function onSignIn(response) {
