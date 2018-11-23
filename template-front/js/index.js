@@ -40,7 +40,7 @@ function onSignIn(response) {
         dataType: 'html'
     }).done(function(data) {
         if (data != "error"){
-            //window.location.href = "src/home.php";
+            window.location.href = "src/home.php";
         }else{
             alert("Usuário ou senha incorretos");
         }
