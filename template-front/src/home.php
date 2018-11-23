@@ -39,7 +39,7 @@
                     <li><a href="indiceGlicemico.php">Indice Glicêmico</a></li>
                     <li><a href="controleGlicemico.php">Controle Glicêmico</a></li>
                     <li><a href="alerta.php">Alerta</a></li>
-                    <li><button type="button" onclick="signOut()">Sair</button></li>
+                    <li><a href="" onclick="signOut()">Sair</a></li>
                 </ul>
             </nav>
      </aside>
