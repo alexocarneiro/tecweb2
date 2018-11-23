@@ -28,7 +28,7 @@
 		$conn->close();	
 	}else{
 		$email = $_POST['email'];
-		$token = $_POST['token'];
+		$user_id = $_POST['user_id'];
 
 		$servername = "179.188.17.66";
 		$username = "arietedi_nutri";
@@ -42,13 +42,13 @@
 			die("Connection failed: " . $conn->connect_error);
 		} 
 
-		$sql = "SELECT USU_EMAIL,USU_LOGIN FROM arietedi_nutri.usu_usuarios WHERE USU_EMAIL ='".$email."' AND USU_LOGIN ='".$token."'";
+		$sql = "SELECT USU_EMAIL,USU_LOGIN FROM arietedi_nutri.usu_usuarios WHERE USU_EMAIL ='".$email."' AND USU_LOGIN ='".$user_id."'";
 		$result = $conn->query($sql);
 
 		if ($result->num_rows > 0 and $result->num_rows < 2) {
 			session_start();
 			$_SESSION['login'] = $email;
-			$_SESSION['pass'] = $token;
+			$_SESSION['pass'] = $user_id;
 		} else {
 			echo "error";
 		}

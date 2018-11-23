@@ -26,7 +26,7 @@ function onSignIn(response) {
     var userID = perfil.getId();
     var userName = perfil.getName();
     var userEmail = perfil.getEmail();
-    var token = response.getAuthResponse().id_token;
+    //var token = response.getAuthResponse().id_token;
     console.log(userID);
     console.log("Email: " + userEmail);
 
@@ -35,7 +35,7 @@ function onSignIn(response) {
         url: 'appX/login.php', 
         data: {
             email: userEmail,
-            token: token
+            user_id: userID
         },
         dataType: 'html'
     }).done(function(data) {
