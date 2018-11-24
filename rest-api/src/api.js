@@ -9,6 +9,7 @@ const alimentosRouter = require('./router/alimentosRouter');
 const dietasRouter = require('./router/dietas.Router');
 const nutrientesRouter = require('./router/nutrientes.Router');
 
+console.log('Alex baitola');
 
 api.use(cors());
 
@@ -16,7 +17,8 @@ api.use(bodyparser.urlencoded({extended: true}));
 api.use(bodyparser.json());
 
 router.get("/", (req, res) => res.json({
-    mensagem: 'Api online!'
+    //mensagem: 'Api online!'
+      res.send('Aeee');
 }));
 
 api.use('/', router);
